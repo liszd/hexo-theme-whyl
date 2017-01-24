@@ -103,7 +103,7 @@ alipay: https://ww3.sinaimg.cn/mw690/48910e01gw1evkbfendrjj20ci0ci0uf.jpg
 instagram:
   enable: true
   userId: 428473662
-  accessToken: 428473662.5ac17f5.3d90e96ff8b54cb9914c9bcd62c46bad
+  accessToken: 428473662.1677ed0.9774cad131cc42c3a4ec95a3b295fd40
   sortBy: random
 
 lazyload: true
