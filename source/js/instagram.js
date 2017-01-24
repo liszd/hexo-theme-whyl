@@ -1,5 +1,5 @@
 /*! jQuery Instagram - v0.3.1 - 2014-06-19
-* http://potomak.github.com/jquery-instagram
+* https://potomak.github.com/jquery-instagram
 * Copyright (c) 2014 Giovanni Cappellotto; Licensed MIT */
 (function($) {
 
