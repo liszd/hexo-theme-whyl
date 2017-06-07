@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Why, Liam, 李承璋"
+keywords: "Zing, WhyLiam, 李承璋"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -38,7 +38,7 @@ menu:
 # Value is the target link (E.g. weibo: https://weibo.com/whyliam)
 social:
   #LinkLabel: Link
-  home: https://www.naaln.com
+  home: https://zing.li
   weibo: https://weibo.com/210002567
   github-alt: https://github.com/liszd
   instagram: https://www.instagram.com/why_liam
