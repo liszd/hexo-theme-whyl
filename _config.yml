@@ -54,12 +54,6 @@ auto_excerpt:
   length: 170
 
 # Discuess
-# Duoshuo
-duoshuo:
-  shortname: naalnalbum
-  share: true
-
-# Disqus
 disqus:
   shortname: 
 
@@ -106,8 +100,6 @@ instagram:
   accessToken: 428473662.1677ed0.9774cad131cc42c3a4ec95a3b295fd40
   sortBy: random
 
-lazyload: true
-highlight: true
 baidu_push: true
 
 # Google Analytics

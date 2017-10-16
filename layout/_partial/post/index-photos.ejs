@@ -1,7 +1,8 @@
 <% if (post.photos) {%>
+
     <% if (post.photos[0].indexOf('.mp4') !== -1 || post.photos[0].indexOf('.webm') !== -1) { %>
     <!-- 视频 -->
-        <div class="post-video">
+        <div class="gllary-single">
             <video class="video-js vjs-fluid" controls preload="false" poster="<%= post.photos[1] %>" data-setup="{}">
                 <% video = post.photos[0]; %>
                 <% if (video.indexOf('mp4') !== -1) { %>
@@ -13,10 +14,18 @@
         </div>
     <% } else { %>
         <!-- 图片 -->
-        <p>
-            <% post.photos.forEach(function(photo){ %>
-                <img src="<%= photo %>" alt="新年滑雪">
-            <% }); %>
-        </p>
+        <% if (post.photos.length == 1) { %>
+            <div class="gllary-single">
+                <div class="center-cropped" style="background-image: url('<%= post.photos %>');">
+                </div>
+            </div>
+        <% } if (post.photos.length > 1) { %>
+            <div class="gllary-multiply">
+                <% post.photos.forEach(function(photo){ %>
+                    <div class="center-cropped" style="background-image: url('<%= post.photos %>');">
+                    </div>
+                <% }); %>
+            </div>
+        <% }%>
     <% }%>
 <% } %>
