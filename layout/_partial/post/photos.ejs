@@ -1,5 +1,5 @@
 <% if (post.photos) {%>
-    <% if (post.photos[0].indexOf('.mp4') !== -1 || post.photos[0].indexOf('.webm') !== -1) { %>
+    <% if (post.photos[0].indexOf('.mp4') !== -1 || post.photos[0].indexOf('.webm') !== -1 || post.photos[0].indexOf('video') !== -1) { %>
     <!-- 视频 -->
         <div class="post-video">
             <video class="video-js vjs-fluid" controls preload="false" poster="<%= post.photos[1] %>" data-setup="{}">
@@ -8,6 +8,8 @@
                     <source src="<%= video %>" type='video/mp4'>
                 <% } if (video.indexOf('webm') !== -1) { %>
                     <source src="<%= video %>" type='video/webm'>
+                <% } else { %>
+                    <source src="<%= video %>" type='video/mp4'>
                 <% } %>
             </video>
         </div>
@@ -15,7 +17,7 @@
         <!-- 图片 -->
         <p>
             <% post.photos.forEach(function(photo){ %>
-                <img src="<%= photo %>" alt="新年滑雪">
+                <img src="<%= photo %>" alt="<%= post.title %>">
             <% }); %>
         </p>
     <% }%>
